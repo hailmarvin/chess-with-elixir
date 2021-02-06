@@ -1,6 +1,6 @@
 defmodule Chess.Board do
     alias Chess.Board
-    @enforce keys [:row, :col]
+    @enforce_keys [:row, :col]
     defstruct [:row, :col]
     @board_size 1..8
     
