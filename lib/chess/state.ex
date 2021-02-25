@@ -1,7 +1,7 @@
 defmodule Chess.State do
     alias Chess.{Board, State}
     @players [:white, :black]
-    @pieces [:pawn, :castle, :knight: :bishop, :king, :queen]
+    @pieces [:pawn, :castle, :knight, :bishop, :king, :queen]
 
     defstruct status: :initial,
             turn: :white,
