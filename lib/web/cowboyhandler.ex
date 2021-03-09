@@ -1,3 +1,5 @@
+## Not used
+
 defmodule Chess.CowboyHandler do  
     def init(_type, req, _opts) do
       {:ok, req, :nostate}
@@ -5,7 +7,7 @@ defmodule Chess.CowboyHandler do
   
     def handle(request, state) do    
       { :ok, reply } = :cowboy_req.reply(
-        200, [{"content-type", "text/html"}], "<h1>UI for Chess Borad</h1>", request
+        200, [{"content-type", "text/html"}], "<h1>UI for Chess Board</h1>", request
       )
       {:ok, reply, state}
     end
